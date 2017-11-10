@@ -1,3 +1,5 @@
+# require 'pry'
+
 def oxford_comma(arr)
     if arr.length == 1
         arr.join
@@ -5,6 +7,7 @@ def oxford_comma(arr)
         arr.join(" and ")
     elsif arr.length >= 3
         add_and = "and " + arr.pop
+        # binding.pry
         arr << add_and
         arr.join(", ")
     end
